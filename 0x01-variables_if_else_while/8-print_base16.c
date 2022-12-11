@@ -10,7 +10,7 @@ int main(void)
 	int b16_1to9;
 	int b16_atof;
 
-	for (b16_1to9 = 0; b16_1to9 <= 9; b16_1to9++)
+	for (b16_1to9 = '0'; b16_1to9 <= '9'; b16_1to9++)
 	{
 		putchar(b16_1to9);
 	}
