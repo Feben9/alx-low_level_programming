@@ -1,5 +1,9 @@
-#!/bin/bash
 #include <stdio.h>
+/**
+ * main - entry point
+ * Printing a string using the function puts
+ * return - 0 (success)
+ */
 
 int main(void)
 {
