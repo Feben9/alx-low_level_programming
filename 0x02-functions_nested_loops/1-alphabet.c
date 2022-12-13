@@ -14,5 +14,4 @@ void print_alphabet(void) /*function to print letters*/
 		_putchar(x);
 	}
 	_putchar('\n');
-	return (void);
 }
