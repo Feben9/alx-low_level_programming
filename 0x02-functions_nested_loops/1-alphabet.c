@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet is a function to print
+ * print_alphabet - is a function to print
  * the lowercase alphabet
  * Return: void
  */
-void print_alphabet(void) /*function to print letters*/
+void print_alphabet(void)
 {
 	char x;
 
