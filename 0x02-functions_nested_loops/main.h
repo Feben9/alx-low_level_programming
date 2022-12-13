@@ -4,4 +4,12 @@
  * alx programming
  */
 int _putchar(char c);
-void print_alphabet(void);
+void print_alphabet(void)
+{
+	char x;
+	
+	for (x = 'a'; x <= 'z'; x++)
+		_putchar(x);
+	_putchar('\n');
+	return (void);
+}
