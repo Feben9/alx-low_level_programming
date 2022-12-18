@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * _isupper - a function to determine if a character is uppercase
  * @c: an single entry digit
