@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_diagonal - a function that draws a diagonal line on the terminal
- * @n: a single entry
+ * print_square - a function that prints a square
+ * @size: a single entry
  * Return: void
  */
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int x;
+	int x = 0;
+	int y;
 
-	if (n > 0)
+	while (x < size)
 	{
-		for (y = n; y >= 0; y--)
+		y = 0;
+		while (y < size)
 		{
-			for (x = 0; x <= n; x++)
-				_putchar('\\');
-			_putchar(' ');
-			_putchar('\n');
+			_putchar('#');
+			y++;
 		}
-	}
-	else
 		_putchar('\n');
+		x++;
+	}
 }
