@@ -10,6 +10,8 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
+int helper(int c, int i);
 int is_prime_number(int n);
+int prime_detector(int m, int i);
 
 #endif /* MAIN_H */
