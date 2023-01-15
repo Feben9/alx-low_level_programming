@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
 	}
 
 	if (atoi(argv[count]) < 0)
+	{
+		printf("0\n");
 		return (0);
+	}
 	amt = atoi(argv[count]);
 	total = amt / 25;
 	amt = amt % 25;
