@@ -7,7 +7,7 @@
  * @age: float of type dog
  * @owner: string pointer of type dog
  *
- * Return: Always dog or NULL
+ * Return: Always void or NULL
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
@@ -18,6 +18,4 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
-
-	return (dog);
 }
