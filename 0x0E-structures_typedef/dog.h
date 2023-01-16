@@ -9,7 +9,7 @@
  *
  * Description - this is a new struct for learning definition
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
