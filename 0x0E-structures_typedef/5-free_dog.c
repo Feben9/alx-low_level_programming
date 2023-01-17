@@ -9,18 +9,8 @@
  *
  * Return: dog_t or NULL
  */
-dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d)
 {
-	struct dog_t *ptr;
-
-	ptr = malloc(sizeof(struct dog_t));
-
-	if (ptr)
-	{
-		ptr->name = name;
-		ptr->owner = owner;
-		ptr->age = age;
-	}
-	
-	return(ptr);
+	if (d)
+		free(d);
 }
