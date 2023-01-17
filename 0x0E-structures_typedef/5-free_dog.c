@@ -2,15 +2,17 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * new_dog - a function that creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+ * free_dog - a function that creates frees dogs
+ * @d: pointer of struct dog_t
  *
- * Return: dog_t or NULL
+ * Return: void or NULL
  */
 void free_dog(dog_t *d)
 {
 	if (d)
+	{
+		free(d->name);
+		free(d->owner);
 		free(d);
+	}
 }
