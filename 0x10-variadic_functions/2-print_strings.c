@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_strings - a function that prints strings
  * @separator: string to be printed between strings
@@ -20,13 +21,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (separator)
 		{
-			printf("%s" , va_arg(ap, char*));
+			printf("%s", va_arg(ap, char*));
 			if (i == n - 1)
 				break;
 			printf("%s", separator);
 		}
 	}
-	
 	printf("\n");
 
 	va_end(ap);
