@@ -11,7 +11,7 @@
  */
 
 /**
- * print_char -  a function that prints characters
+ * print_char - a function that prints characters
  * Return: nothing
  */
 void print_char(void)
@@ -99,9 +99,7 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				printf("(nil)");
-		}
-		i++;
-	}
-	printf("\n");
+		} i++;
+	} printf("\n");
 	va_end(ap);
 }
