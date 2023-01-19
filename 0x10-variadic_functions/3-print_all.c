@@ -4,6 +4,11 @@
 /**
  * print_all - a function that prints anything
  * 
+ * print_char -  a function that prints characters
+ * print_int - a function that prints integers
+ * print_float - a function that prints numbers
+ * print_string - a function that prints strings
+ *
  * @format: a list of types of arguments passed to the function
  * @...: variable parameters
  *
@@ -88,6 +93,8 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				printf("(nil)");
+				flag = 1;
+				break;
 		}
 		i++;
 	}
