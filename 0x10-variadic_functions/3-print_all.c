@@ -3,11 +3,6 @@
 #include "variadic_functions.h"
 /**
  * print_all - a function that prints anything
- * 
- * print_char -  a function that prints characters
- * print_int - a function that prints integers
- * print_float - a function that prints numbers
- * print_string - a function that prints strings
  *
  * @format: a list of types of arguments passed to the function
  * @...: variable parameters
@@ -15,39 +10,51 @@
  * Return: nothing
  */
 
-/* print_char -  a function that prints characters */
+/**
+ * print_char -  a function that prints characters
+ * Return: nothing
+ */
 void print_char(void)
 {
 	char letter;
 	va_list ap;
-	
+
 	letter = va_arg(ap, int);
 	printf("%c", letter);
 }
-/* print_int - a function that prints integers */
+/**
+ * print_int - a function that prints integers
+ * Return: nothing
+ */
 void print_int(void)
 {
 	int num;
 	va_list ap;
-	
+
 	num = va_arg(ap, int);
 	printf("%d", num);
 }
-/* print_float - a function that prints numbers */
+/**
+ * print_float - a function that prints numbers
+ * Return: nothing
+ */
 void print_float(void)
 {
 	float num;
 	va_list ap;
-	
+
 	num = va_arg(ap, double);
 	printf("%f", num);
 }
-/* print_string - a function that prints strings */
+/**
+ * print_string - a function that prints strings
+ * Return: nothing
+ */
 void print_string(void)
 {
 	char *str;
 	va_list ap;
-	
+
 	str = va_arg(ap, char*);
 	if (!str)
 		printf("(nil)");
@@ -60,7 +67,6 @@ void print_all(const char * const format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-
 	while (format && format[i])
 	{
 		j = 0;
