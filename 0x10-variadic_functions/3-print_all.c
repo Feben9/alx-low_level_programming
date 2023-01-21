@@ -3,13 +3,11 @@
 #include "variadic_functions.h"
 /**
  * print_all - a function that prints anything
- *
  * @format: a list of types of arguments passed to the function
  * @...: variable parameters
  *
  * Return: nothing
  */
-
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0, j, flag = 0;
@@ -33,23 +31,21 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(ap, int));
-				flag = 1;
+				printf("%c", va_arg(ap, int)), flag = 1;
 				break;
 			case 'i':
-				printf("%d", va_arg(ap, int));
-				flag = 1;
+				printf("%d", va_arg(ap, int)), flag = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(ap, double));
-				flag = 1;
+				printf("%f", va_arg(ap, double)), flag = 1;
 				break;
 			case 's':
 				str = va_arg(ap, char*);
 				if (!str)
-					printf("nil");
-				printf("%s", str);
-				flag = 1;
+				{
+					printf("nil"), break;
+				}
+				printf("%s", str), flag = 1;
 				break;
 		} i++;
 	} printf("\n");
