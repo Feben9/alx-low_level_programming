@@ -43,7 +43,8 @@ void print_all(const char * const format, ...)
 				str = va_arg(ap, char*);
 				if (!str)
 				{
-					printf("nil"), break;
+					printf("nil");
+					break;
 				}
 				printf("%s", str), flag = 1;
 				break;
